@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Custom Font Implementation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APCV403 Lab 3</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>自定义字体展示</h1>
-    <p>这段文字使用了 "Frijole" 字体。如果你能看到这个样式的变化，那就说明自定义字体已经正确加载并显示了。</p>
-    
-    <p>为了将特定字体传递给客户端（浏览器），服务器必须拥有该字体文件。在网站的CSS文件中使用<code>@font-face</code>规则来引用它，指定字体的名称和文件路径。当浏览器加载网页时，它也会从服务器请求这个字体文件，下载它，并根据CSS文件中的指定应用到网页文本上。</p>
+    <h1>APCV403 Lab 3: Custom Font Integration</h1>
+    <p>In this project, we are using a font called 'Lobster' that was initially sourced from Google Fonts. Instead of linking directly to Google Fonts, the font file has been downloaded and is now hosted on our own server. This method is known as self-hosting and it allows for more control over the font serving process. The @font-face rule in CSS is used to specify the location of the font file on our server, allowing the browser to download and use it when rendering our web page. This ensures that the font is available even if Google Fonts is not accessible for any reason, and it can also offer performance benefits by utilizing the same connection used to load other resources from our server.</p>
+
+    <!-- Further content goes here -->
 
     <footer>
         <p>Last updated: 
@@ -17,8 +18,8 @@
         </p>
     </footer>
     <script type="text/javascript">
-         var x = document.lastModified;
-         document.getElementById('lastModified').textContent = x;
+        document.getElementById('lastModified').textContent = document.lastModified;
     </script>
 </body>
 </html>
+
