@@ -1,18 +1,17 @@
 @font-face {
-    font-family: 'Frijole';
-    src: url('Frijole.ttf') format('truetype');
+    font-family: 'Lobster';
+    src: url('Lobster/Lobster.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Frijole', sans-serif;
-    margin: 20px;
+    font-family: 'Lobster', sans-serif;
 }
 
 footer {
-    margin-top: 50px;
     font-size: 0.8em;
+    text-align: center;
+    margin-top: 50px;
 }
-
 
