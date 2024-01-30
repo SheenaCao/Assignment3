@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Font Implementation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>自定义字体展示</h1>
+    <p>这段文字使用了 "Frijole" 字体。如果你能看到这个样式的变化，那就说明自定义字体已经正确加载并显示了。</p>
+    
+    <p>为了将特定字体传递给客户端（浏览器），服务器必须拥有该字体文件。在网站的CSS文件中使用<code>@font-face</code>规则来引用它，指定字体的名称和文件路径。当浏览器加载网页时，它也会从服务器请求这个字体文件，下载它，并根据CSS文件中的指定应用到网页文本上。</p>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
